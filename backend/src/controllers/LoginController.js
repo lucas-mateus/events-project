@@ -5,7 +5,6 @@ module.exports = {
     async store(req, res){
         try{
             const {email, password} = req.body;
-            console.log(`emaiiiiiil ${email} e senhaaaaa ${password}`)
             
             if(!email || !password){
                 return res.status(200).json({
