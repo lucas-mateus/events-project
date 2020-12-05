@@ -1,11 +1,15 @@
+import React from 'react';
 import './App.css';
+import { Container } from 'reactstrap';
+import Routes from './routes';
 
 function App() {
   return (
-    <div className="App">
-      <p>iniciando front-end</p>
-    </div>
-  );
+    <Container>
+      <h1>Events App</h1>
+      <Routes/>
+    </Container>
+  )
 }
 
 export default App;
