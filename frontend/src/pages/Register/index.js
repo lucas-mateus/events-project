@@ -27,12 +27,12 @@ export default function Register({ history }) {
     return (
         <Form onSubmit={handleSubmit}>
             <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
-                <Label for="firstName" className="mr-sm-2">Email</Label>
+                <Label for="firstName" className="mr-sm-2">Nome</Label>
                 <Input type="text" name="firstName" id="firstName" placeholder="Seu nome"
                     onChange={evt => setFirstName(evt.target.value)} />
             </FormGroup>
             <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
-                <Label for="lastName" className="mr-sm-2">Email</Label>
+                <Label for="lastName" className="mr-sm-2">Sobrenome</Label>
                 <Input type="text" name="lastName" id="lastName" placeholder="Seu sobrenome"
                     onChange={evt => setLastName(evt.target.value)} />
             </FormGroup>
@@ -42,7 +42,7 @@ export default function Register({ history }) {
                     onChange={evt => setEmail(evt.target.value)} />
             </FormGroup>
             <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
-                <Label for="password" className="mr-sm-2">Password</Label>
+                <Label for="password" className="mr-sm-2">Senha</Label>
                 <Input type="password" name="password" id="password" placeholder="Senha"
                     onChange={evt => setPassword(evt.target.value)} />
             </FormGroup>
